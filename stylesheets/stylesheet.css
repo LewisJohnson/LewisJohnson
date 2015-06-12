@@ -572,7 +572,7 @@ a.social-links:hover
 }
 
 
-/* CONTENT LAYOUT */
+/* CONTENT HEADER */
 
 .content-header {
     background-color: #eee;
@@ -596,19 +596,22 @@ a.social-links:hover
 @media screen and (min-width: 64em) {
 
     .content-header{
-        padding: 5rem 6rem;
+        padding-top: 7rem;
+        padding-bottom: 2rem;
+        padding-left: 8rem;
+        padding-right: 8rem;
     }
 }
 
 @media screen and (min-width: 42em) and (max-width: 64em) {
     .content-header{
-        padding: 3rem 4rem;
+        padding: 6rem 4rem;
     }
 }
 
 @media screen and (max-width: 42em) {
     .content-header{
-        padding: 2rem 1rem;
+        padding: 4rem 1rem;
     }
 }
 
