@@ -2,6 +2,7 @@
 <html lang="en-us">
 <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
 <head>
+    <link rel="shortcut icon" href="assets/Projects/LogoIcon.ico">
     <meta charset="UTF-8">
     <title>Contact - Lewis Johnson</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -21,12 +22,16 @@
             $("#page-header").toggleClass("disabled");
         });
     });
+
+    function email() {
+        window.open('mailto:lewisj489@gmail.com');
+    }
 </script>
 
 <label for="page-header"></label>
 <section class="page-header" id="page-header">
 
-    <a class="hamburger-btn hvr-grow-shadow" id="hamburger"></a>
+    <a class="hamburger-btn hvr-grow" id="hamburger"></a>
 
     <div class="menu">
         <div class="header-logo">
@@ -45,48 +50,83 @@
 
         <div class="header-text">
             <h1>Lewis Johnson</h1>
-
             <h2>.NET Developer</h2>
         </div>
     </div>
 </section>
 
 <div class="content-header">
-    <div class="content-header-div">
-    <h1>Lewis Johnson</h1>
-
-    <h2>Computer Science Student.</h2>
-    </div>
 
     <div class="info-box">
         <img class="footer-image" src="assets/Face.jpg">
-
-        <p class="footer-info">A student studying computer science and artificial intelligence, studying at the University of Sussex.
-            I contribute to open source projects, as well as personal projects.
-            Want some help on your project? <a class="social-links" href="contact.html" target="_blank">Click here</a></p>
     </div>
+
+    <div>
+        <h1>Contact Lewis Johnson</h1>
+        <h2>Computer Science Student.</h2>
+    </div>
+
 </div>
 
 <section class="main-content">
 
-    <p>
-        Lorem ipsum dolor sit amet, cu graeco dissentiunt sed, no prompta eloquentiam sit. Sed ridens oporteat
-        mediocritatem ex, euismod efficiantur duo ut, mea ea lucilius temporibus. At sint appetere indoctum vel. Mei
-        nullam graecis fastidii id. Mea expetenda urbanitas ex, vim ut dicant voluptaria consequuntur.
-        Putant utroque reprimique ius an, eu pro purto clita. Sumo prompta comprehensam sed ea, habemus inciderint id
-        duo, enim vitae sit an. Est in solet quidam. Duo etiam dicant tritani no. Sea nihil quaestio accommodare et.
-        Tamquam postulant per ex, vel at harum omnium sapientem. Fabellas quaestio interesset no vel, an enim vero
-        abhorreant mel, tibique luptatum mei ne. In cum quando fuisset intellegam, tibique accumsan ut nam. Eu affert
-        accusam salutatus quo. Te suas dicta viderer est, vis tota maiorum detracto ea.
-        Id aperiri commune noluisse vel, est expetendis argumentum scripserit an, te veritus menandri vix. In pro agam
-        munere, veritus adolescens intellegam eu eos. Mea bonorum omittantur ex, eam diceret scriptorem in. Doming
-        prodesset ut per, no dicat delicata laboramus pri, est ne sale eripuit. At eam ipsum verear, ex ferri legimus
-        nec.
-        Ea qui velit docendi euripidis, aeque propriae scaevola vel id. Ad ferri putant per. No voluptua deserunt nec,
-        eos ut adhuc impetus nostrud. Eu pro homero mandamus scribentur, ex pri quas nobis alterum. Omnis inermis ad
-        per, ex labore vidisse perpetua sea. In vix dicant similique, at inani inciderint has, sit brute electram
-        salutatus ut.
-    </p>
+    <div>
+        <p>
+            Hey! Do you want me to help out on an open source project?
+            Need to get that project done before a deadline? Get in touch!
+
+        </p>
+
+        <a href="https://twitter.com/intent/tweet?screen_name=lewisj489" class="twitter-mention-button" data-size="large"
+           data-related="lewisj489">Tweet to @lewisj489</a>
+        <script>!function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https';
+            if (!d.getElementById(id)) {
+                js = d.createElement(s);
+                js.id = id;
+                js.src = p + '://platform.twitter.com/widgets.js';
+                fjs.parentNode.insertBefore(js, fjs);
+            }
+        }(document, 'script', 'twitter-wjs');</script>
+    </div>
+
+    <div class="contact-div">
+        <h1>About you</h1>
+
+        <form class="contact-form">
+            <div>
+                Full name*
+                    <input type="text" name="name">
+            </div>
+
+            <div>
+                Email address*
+                    <input type="email" name="email">
+            </div>
+            <div>
+                Your website
+                    <input type="text" name="website">
+            </div>
+            <div>
+                How did you hear about this site?
+                    <input type="text" name="heard">
+            </div>
+        </form>
+
+        <h1>About the project</h1>
+
+        <h2>When contacting me about a project, please give me some details.</h2>
+
+        <form class="project-form">
+            Message/Project description*<br>
+            <textarea type="text" name="desc">
+                </textarea>
+        </form>
+    </div>
+
+    <div>
+        <a class="send-email" onclick="email()">Email Me!</a>
+    </div>
 
 </section>
 
