@@ -26,6 +26,7 @@
     width: 100%;
     height: 10em;
     max-width: 100%;
+    margin-bottom: 1rem;
 
 
 }
@@ -81,6 +82,7 @@
     color: white;
     cursor: pointer;
 
+
     -webkit-touch-callout: none;
     -webkit-user-select: none;
     -khtml-user-select: none;
@@ -127,7 +129,15 @@
     }
 
     .project-form input{
+        width: 90%;
+    }
+
+    .project-form textarea{
         width: 100%;
+        height: 10em;
+        max-width: 95%;
+        margin-bottom: 1rem;
+
     }
 
     .contact-div h1{
@@ -141,13 +151,17 @@
     .contact-form div{
         padding: 1rem 1rem 2rem;
     }
+
+    .send-email{
+        width: 95%;
+
+    }
 }
 
 
 /* CONTENT HEADER */
 
 .content-header {
-
 
 }
 

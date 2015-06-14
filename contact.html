@@ -85,9 +85,9 @@
         <a href="https://twitter.com/intent/tweet?screen_name=lewisj489" class="twitter-mention-button" data-size="large"
            data-related="lewisj489">Tweet to @lewisj489</a>
         <script>!function (d, s, id) {
-            var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https';
+            var fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https';
             if (!d.getElementById(id)) {
-                js = d.createElement(s);
+                var js = d.createElement(s);
                 js.id = id;
                 js.src = p + '://platform.twitter.com/widgets.js';
                 fjs.parentNode.insertBefore(js, fjs);
@@ -101,20 +101,20 @@
         <form class="contact-form">
             <div>
                 Full name*
-                    <input type="text" name="name">
+                    <input type="text" name="name" title="">
             </div>
 
             <div>
                 Email address*
-                    <input type="email" name="email">
+                    <input type="email" name="email" title="">
             </div>
             <div>
                 Your website
-                    <input type="text" name="website">
+                    <input type="text" name="website" title="">
             </div>
             <div>
                 How did you hear about this site?
-                    <input type="text" name="heard">
+                    <input type="text" name="heard" title="">
             </div>
         </form>
 
@@ -124,7 +124,7 @@
 
         <form class="project-form">
             Message/Project description*<br>
-            <textarea type="text" name="desc">
+            <textarea type="text" name="desc" title="">
                 </textarea>
         </form>
     </div>

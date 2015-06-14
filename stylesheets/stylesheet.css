@@ -71,12 +71,11 @@
 
 }
 
-
 @keyframes LoadAnim {
     0% {
         transform: TranslateY(-10rem);
         opacity: 0;
-        margin: 40rem;
+        margin: 40vh;
 
     }
     100% {
@@ -86,8 +85,6 @@
 
     }
 }
-
-
 
 .header-text {
     text-align: left;
