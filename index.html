@@ -6,27 +6,23 @@
     <meta charset="UTF-8">
     <title>Portfolio - Lewis Johnson</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <!--Fonts -->
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Roboto:300' rel='stylesheet' type='text/css'>
 
     <!--Style -->
     <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
-
     <link rel="stylesheet" href="stylesheets/hover.css"  media="all">
-    <link rel="stylesheet" type="text/css" href="stylesheets/portfolio-stylesheet.css" media="screen">
 
-    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+
+    <!--Script-->
+    <script src="Scripts/Frame.js"></script>
+    <script src="Scripts/PageHandler.js"></script>
+
 </head>
+
 <body class="body">
-<script>
-    $(document).ready(function () {
-        $('a#hamburger').click(function () {
-            $("#page-header").toggleClass("disabled");
-        });
-    });
-</script>
 
 <label for="page-header"></label>
 <section class="page-header" id="page-header">
@@ -40,10 +36,10 @@
 
         <div class="nav-div">
             <ul class="navigation-bar">
-                <li><a class="hvr-underline-reveal" href="about.html">ABOUT</a></li>
-                <li><a class="hvr-underline-reveal" href="index.html">PORTFOLIO</a></li>
-                <li><a class="hvr-underline-reveal" href="articles.html">ARTICLES</a></li>
-                <li><a class="hvr-underline-reveal" href="contact.html">CONTACT</a></li>
+                <li id="about-header-item"><a class="hvr-underline-reveal">ABOUT</a></li>
+                <li id="portfolio-header-item"><a class="hvr-underline-reveal">PORTFOLIO</a></li>
+                <li id="articles-header-item"><a class="hvr-underline-reveal">ARTICLES</a></li>
+                <li id="contact-header-item"><a class="hvr-underline-reveal">CONTACT</a></li>
             </ul>
         </div>
 
@@ -62,7 +58,8 @@
     <h2>Specialising in .NET, code patterns, responsive design, back-end development, and performance.</h2>
 </div>
 
-<section class="main-content">
+<div class="main-container">
+<section id="Portfolio-Page" class="main-content content-page">
 
     <div>
         <ul class="grid">
@@ -121,6 +118,91 @@
 
 </section>
 
+<section id="Contact-Page" class="main-content content-page">
+
+    <div>
+        <p>
+            Hey! Do you want me to help out on an open source project?
+            Need to get that project done before a deadline? Get in touch!
+
+        </p>
+
+        <a href="https://twitter.com/intent/tweet?screen_name=lewisj489" class="twitter-mention-button" data-size="large"
+           data-related="lewisj489">Tweet to @lewisj489</a>
+
+    </div>
+
+    <div class="contact-div">
+        <h1>About you</h1>
+
+        <form class="contact-form">
+            <div>
+                Full name*
+                <input type="text" name="name" title="">
+            </div>
+
+            <div>
+                Email address*
+                <input type="email" name="email" title="">
+            </div>
+            <div>
+                Your website
+                <input type="text" name="website" title="">
+            </div>
+            <div>
+                How did you hear about this site?
+                <input type="text" name="heard" title="">
+            </div>
+        </form>
+
+        <h1>About the project</h1>
+
+        <h2>When contacting me about a project, please give me some details.</h2>
+
+        <form class="project-form">
+            Message/Project description*<br>
+            <textarea type="text" name="desc" title="">
+                </textarea>
+        </form>
+    </div>
+
+    <div>
+        <a class="send-email" onclick="email()">Email Me!</a>
+    </div>
+
+</section>
+
+<section id="About-Page" class="main-content content-page">
+
+    <div>
+        <p>
+            Lorem ipsum dolor sit amet, cu graeco dissentiunt sed, no prompta eloquentiam sit. Sed ridens oporteat
+            mediocritatem ex, euismod efficiantur duo ut, mea ea lucilius temporibus. At sint appetere indoctum vel. Mei
+            nullam graecis fastidii id. Mea expetenda urbanitas ex, vim ut dicant voluptaria consequuntur.
+            Putant utroque reprimique ius an, eu pro purto clita. Sumo prompta comprehensam sed ea, habemus inciderint id
+            duo, enim vitae sit an. Est in solet quidam. Duo etiam dicant tritani no. Sea nihil quaestio accommodare et.
+            Tamquam postulant per ex, vel at harum omnium sapientem. Fabellas quaestio interesset no vel, an enim vero
+            abhorreant mel, tibique luptatum mei ne. In cum quando fuisset intellegam, tibique accumsan ut nam. Eu affert
+            accusam salutatus quo. Te suas dicta viderer est, vis tota maiorum detracto ea.
+            Id aperiri commune noluisse vel, est expetendis argumentum scripserit an, te veritus menandri vix. In pro agam
+            munere, veritus adolescens intellegam eu eos. Mea bonorum omittantur ex, eam diceret scriptorem in. Doming
+            prodesset ut per, no dicat delicata laboramus pri, est ne sale eripuit. At eam ipsum verear, ex ferri legimus
+            nec.
+            Ea qui velit docendi euripidis, aeque propriae scaevola vel id. Ad ferri putant per. No voluptua deserunt nec,
+            eos ut adhuc impetus nostrud. Eu pro homero mandamus scribentur, ex pri quas nobis alterum. Omnis inermis ad
+            per, ex labore vidisse perpetua sea. In vix dicant similique, at inani inciderint has, sit brute electram
+            salutatus ut.
+
+        </p>
+
+        <a href="https://twitter.com/intent/tweet?screen_name=lewisj489" class="twitter-mention-button" data-size="large"
+           data-related="lewisj489">Tweet to @lewisj489</a>
+
+    </div>
+
+</section>
+
+</div>
 
 <footer class="site-footer">
 
@@ -132,7 +214,7 @@
             <p class="footer-info">A student studying computer science and artificial intelligence, studying at the
                 University of Sussex.
                 I contribute to open source projects, as well as personal projects.
-                Want some help on your project? <a class="social-links" href="contact.html" target="_blank">Click
+                Want some help on your project? <a id="contact-item" class="social-links" target="_blank">Click
                     here</a></p>
         </div>
 
@@ -162,9 +244,12 @@
         </div>
 
 
+        <div>
         <p class="footer-copyright">Nothing is copyrighted, but it looks nice to have this at the bottom. Code samples
             are
             licensed under UNLICENSE. JK no licenses here.</p>
+        </div>
+
     </div>
 </footer>
 
