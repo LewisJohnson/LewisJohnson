@@ -29,9 +29,9 @@
 
 @media screen and (max-width: 42em) {
     .main-container{
-        margin-bottom: 5rem;
-        margin-left: 2rem;
-        margin-right: 2rem;
+        margin-bottom: 2rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
     }
 
 
@@ -751,6 +751,7 @@ a.social-links:hover {
 @media screen and (max-width: 42em) {
     .site-footer {
         padding: 1rem 1rem;
+        font-size: 1rem;
     }
 
     .footer-copyright {
@@ -764,14 +765,15 @@ a.social-links:hover {
     }
 
     .soical-section li p {
-        visibility: visible;
+        visibility: collapse;
         text-align: justify;
         max-height: 0;
+        font-size: 0.4rem;
     }
 
     .soical-section li img {
         width: 20%;
-        float: left;
+        float: none;
     }
 
 }
@@ -986,7 +988,7 @@ a.social-links:hover {
 @media screen and (max-width: 42em) {
     .grid li {
         width: 100%;
-        padding: 1rem;
+        padding-bottom: 0.5rem;
     }
 }
 
