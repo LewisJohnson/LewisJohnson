@@ -17,8 +17,9 @@
 
 
     <!--Script-->
-    <script src="Scripts/Frame.js"></script>
+    <script src="Scripts/Twitter.js"></script>
     <script src="Scripts/PageHandler.js"></script>
+
 
 </head>
 
@@ -123,13 +124,12 @@
     <div>
         <p>
             Hey! Do you want me to help out on an open source project?
-            Need to get that project done before a deadline? Get in touch!
-
+            Need to get that project done before a deadline? Get in touch via Twitter or E-mail!
         </p>
+    </div>
 
-        <a href="https://twitter.com/intent/tweet?screen_name=lewisj489" class="twitter-mention-button" data-size="large"
-           data-related="lewisj489">Tweet to @lewisj489</a>
-
+    <div align="center" class="twitter-timeline-div">
+        <a class="twitter-timeline" href="https://twitter.com/lewisj489" data-widget-id="611509948351184896">Tweets by @lewisj489</a>
     </div>
 
     <div class="contact-div">
@@ -138,20 +138,20 @@
         <form class="contact-form">
             <div>
                 Full name*
-                <input type="text" name="name" title="">
+                <input type="text" id="name" title="">
             </div>
 
             <div>
                 Email address*
-                <input type="email" name="email" title="">
+                <input type="email" id="email" title="">
             </div>
             <div>
                 Your website
-                <input type="text" name="website" title="">
+                <input type="text" id="website" title="">
             </div>
             <div>
                 How did you hear about this site?
-                <input type="text" name="heard" title="">
+                <input type="text" id="heard" title="">
             </div>
         </form>
 
@@ -161,9 +161,11 @@
 
         <form class="project-form">
             Message/Project description*<br>
-            <textarea type="text" name="desc" title="">
+            <textarea type="text" id="desc" title="">
                 </textarea>
         </form>
+
+        <p id="sentP">Sent!</p>
     </div>
 
     <div>
