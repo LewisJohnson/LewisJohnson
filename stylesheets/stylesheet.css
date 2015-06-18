@@ -986,55 +986,6 @@ a.social-links:hover {
 
 /* Portfolio END */
 
-/* CONTENT HEADER */
-
-.content-header {
-
-}
-
-.content-header h1 {
-    color: black;
-    font-weight: 900;
-    text-align: left;
-}
-
-.content-header h2 {
-    color: gray;
-    font-weight: lighter;
-    text-align: left;
-
-}
-
-@media screen and (min-width: 64em) {
-
-    .content-header {
-        padding: 6rem 6rem 1rem;
-
-    }
-}
-
-@media screen and (min-width: 42em) and (max-width: 64em) {
-    .content-header {
-        padding: 3rem 1rem 3rem;
-    }
-}
-
-@media screen and (max-width: 42em) {
-    .content-header {
-        padding: 3rem 2rem 2rem;
-    }
-
-    .content-header h1 {
-        text-align: center;
-    }
-
-    .content-header h2 {
-        text-align: center;
-
-    }
-}
-
-/*contact end*/
 
 /*Twitter*/
 

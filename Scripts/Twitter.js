@@ -18,8 +18,7 @@ function email() {
 
             "key": "bJv7NW-z1KY69G9pJx8_zw",
             "message": {
-                "html": 'Name: ' + name + '\nEmail: ' + email + '\nWebsite: ' + website + '\nHow they heard: ' + heard + '\nProject Description: ' + desc,
-                "text": "Someone has contacted you.",
+                "text": '\nName: ' + name + '\nEmail: ' + email + '\nWebsite: ' + website + '\nHow they heard: ' + heard + '\nProject Description: ' + desc,
                 "subject": "Lewis Johnson - Contact",
                 "from_email": SenderEmail,
                 "from_name": name,
@@ -34,8 +33,12 @@ function email() {
         }
     }).done(function (response) {
         console.log(response);
-        $('#sentP').show(500);
-
+        $('#sentP').show(100);
+        $('#name').value = "";
+            $('#website').value = "";
+          $('#heard').value= "";
+              $('#desc').value = "";
+            $('#email').value = "";
     });
 }
 
