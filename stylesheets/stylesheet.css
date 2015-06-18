@@ -38,16 +38,18 @@
 }
 
 .content-page{
-
     animation-name: PageAnim;
-    animation-duration: 1s;
+    animation-duration: 0.5s;
     -webkit-animation-timing-function: ease;
     animation-timing-function: ease;
+
 }
+
 @keyframes PageAnim {
     0% {
         transform: TranslateX(0);
         opacity: 1;
+
 
     }
     49% {
@@ -236,7 +238,10 @@
     display: inline;
     float: right;
     font-family: 'Roboto', sans-serif;
+}
 
+.navigation-bar-item{
+    cursor: pointer;
 }
 
 .navigation-bar li {
@@ -940,6 +945,12 @@ a.social-links:hover {
     overflow: hidden;
     list-style-type: none;
     width: 100%;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 .grid li {
@@ -953,13 +964,20 @@ a.social-links:hover {
 
 .grid li:hover {
     padding: 1rem;
+
+}
+
+.grid img:hover {
+    background-color: #4F87BF;
+
 }
 
 .grid img {
     display: block;
-    -webkit-transition: all 1s;
-    -moz-transition: all 1s;
-    transition: all 1s;
+    -webkit-transition: all 1s, background-color 0.3s;;
+    -moz-transition: all 1s, background-color 0.3s;;
+    transition: all 1s, background-color 0.3s;;
+    background-color: #7f7e7f;
 
 }
 

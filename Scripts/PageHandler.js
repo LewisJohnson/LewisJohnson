@@ -62,7 +62,6 @@ $(document).ready(function () {
 
         $("#Portfolio-Page").hide(0);
         $("#About-Page").hide(0);
-
         $("#Contact-Page").show(0);
     });
 

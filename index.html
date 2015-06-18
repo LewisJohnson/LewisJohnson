@@ -37,10 +37,10 @@
 
         <div class="nav-div">
             <ul class="navigation-bar">
-                <li id="about-header-item"><a class="hvr-underline-reveal">ABOUT</a></li>
-                <li id="portfolio-header-item"><a class="hvr-underline-reveal">PORTFOLIO</a></li>
-                <li id="articles-header-item"><a class="hvr-underline-reveal">ARTICLES</a></li>
-                <li id="contact-header-item"><a class="hvr-underline-reveal">CONTACT</a></li>
+                <li id="about-header-item"><a class="navigation-bar-item hvr-underline-reveal">ABOUT</a></li>
+                <li id="portfolio-header-item"><a class="navigation-bar-item hvr-underline-reveal">PORTFOLIO</a></li>
+                <li id="articles-header-item"><a class="navigation-bar-item hvr-underline-reveal">ARTICLES</a></li>
+                <li id="contact-header-item"><a class="navigation-bar-item hvr-underline-reveal">CONTACT</a></li>
             </ul>
         </div>
 
@@ -132,7 +132,7 @@
 
             <div>
                 Email address*
-                <input type="email" id="email" title="">
+                <input type="email" id="email" title="" value="example@provider.com">
             </div>
             <div>
                 Your website
@@ -149,9 +149,10 @@
         <h2>When contacting me about a project, please give me some details.</h2>
 
         <form class="project-form">
+            <div>
             Message/Project description*<br>
-            <textarea type="text" id="desc" title="">
-                </textarea>
+            <textarea type="text" id="desc" title=""></textarea>
+            </div>
         </form>
 
         <p id="sentP">Sent!</p>
