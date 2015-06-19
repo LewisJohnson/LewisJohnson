@@ -11,7 +11,9 @@ function email() {
         desc = $('#desc').val(),
         SenderEmail = $('#email').val();
 
-    if(!SenderEmail.contains('@')){
+    console.log(SenderEmail);
+
+    if(!SenderEmail.search( '@' )){
         $('#Email-failP').show(400);
     }
 
