@@ -11,6 +11,10 @@ function email() {
         desc = $('#desc').val(),
         SenderEmail = $('#email').val();
 
+    if(!SenderEmail.contains('@')){
+        $('#Email-failP').show(400);
+    }
+
     $.ajax({
         type: 'POST',
         url: 'https://mandrillapp.com/api/1.0/messages/send.json',
@@ -18,11 +22,7 @@ function email() {
 
             "key": "bJv7NW-z1KY69G9pJx8_zw",
             "message": {
-<<<<<<< HEAD
-                "text": '\nName: ' + name + '\nEmail: ' + SenderEmail + '\nWebsite: ' + website + '\nHow they heard: ' + heard + '\nProject Description: ' + desc,
-=======
                 "text": 'You have a new message for lewisjohnson3d.com. The message is as follows;\n' + '\nName: ' + name + '\nEmail: ' + SenderEmail + '\nWebsite: ' + website + '\nHow they heard: ' + heard + '\n\nProject Description: ' + desc,
->>>>>>> origin/gh-pages
                 "subject": "Lewis Johnson - Contact",
                 "from_email": SenderEmail,
                 "from_name": name,
@@ -37,7 +37,7 @@ function email() {
         }
     }).done(function (response) {
         console.log(response);
-        $('#sentP').show(100);
+        $('#sentP').show(400);
     });
 }
 

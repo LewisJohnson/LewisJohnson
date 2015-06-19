@@ -15,7 +15,10 @@ $(document).ready(function () {
     $("#Contact-Page").hide(0);
     $("#About-Page").hide(0);
     $("#Portfolio-Page").show(0);
+
     $('#sentP').hide();
+    $('#Email-failP').hide();
+
     $("html, body").animate({
         scrollTop: 0
     }, 300);
