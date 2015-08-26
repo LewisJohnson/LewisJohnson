@@ -13,6 +13,27 @@
 
 */
 
+.Overlay{
+    height: 100rem;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.Overlay h1{
+    color: white;
+    font-size: 4rem;
+    font-weight: 100;
+    text-align: center;
+    left: 0;
+    margin: -500px auto auto;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+}
+
 @media screen and (min-width: 64em) {
     .main-container{
         margin-bottom: 5rem;
